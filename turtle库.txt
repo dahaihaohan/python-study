@@ -1,0 +1,96 @@
+turtle(海龟)库是turtle绘图体系的Python实现—————入门级的图形绘制函数库
+
+turtle的绘图窗体
+	turtle.setup(width,height,startx,starty)————设置窗体大小及位置（后两个参数可选，默认正中心）
+	
+	turtle空间坐标体系：
+		绝对坐标：（0，0）位于窗体中央
+			turtle.goto(x,y) 从指针开始走到（x,y）
+		海龟坐标：上为左侧，右为前进
+					turtle.fd(d)——————前进
+					turtle.bk(d)——————后退
+					turtle.circle(r,angle)——————以海龟当前位置左侧的某一个点为圆心进行曲线运行
+		海龟角度坐标：
+			turtle.seth(angle)————改变当前海龟的行进方向（只改变行进方向但不行进）
+			turtle.left(angle)————向左方向旋转
+			turtle.rigth(angle)—————向右方向旋转
+
+turtle画笔控制函数
+	画笔操作后一直有效，一般成对出现
+		(别名和函数名两个功能完全一样，函数是一致的)
+	-turtle.penup()————抬起画笔，海龟在飞———别名 turtle.pu()
+	-turtle.pendown()————落下画笔，海龟在爬行—————别名 turtle.pd()
+	-turtle.pensize(width)————画笔宽度，海龟腰围————turtle.width(width)
+	-turtle.pencolor(color)————画笔颜色，海龟在涂装
+			(color为颜色字符串或r,g,b值)
+				三种形式：
+					-颜色字符串：turtle.pencolor("purple")
+					-RGB的小数值：turtle.pencolor(0.63,0.13,0.94)
+					-RGB的元组值：turtle.pencolor( (0.63,0.13,0.94) )
+	
+turtle运动控制函数：
+	控制海龟行进：走直线&走曲线
+	-turtle.forward(d) 别名 turtle.fd(d)
+		向前行进，海龟走直线
+			-d:行进距离，可以为负数
+	-turtle.circle(r,extent=None) 
+		根据半径r绘制entent角度的弧形
+			-r:默认圆心在海龟左侧r距离的位置
+			-extent：绘制角度，默认是360度整圆
+
+turtle方向控制函数
+	控制海龟面对方向：绝对角度&海龟角度
+	-turtle.setheading(angle) 别名  turtle.seth(angle)
+		改变行进方向，海龟走角度
+			-angle:改变行进方向，海龟走角度
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
